@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { ViewRecipesComponent } from './view-recipes/view-recipes.component';
 import { AboutComponent } from './about/about.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddRecipeComponent,
     ViewRecipesComponent,
-    AboutComponent
+    AboutComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
