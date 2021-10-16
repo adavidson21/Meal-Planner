@@ -11,4 +11,12 @@ export class CalendarComponent{
   view: CalendarView = CalendarView.Month;
   CalendarView = CalendarView;
   viewDate: Date = new Date();
+  activeDayIsOpen: boolean = true;
+
+  closeOpenMonthViewDay() {
+    this.activeDayIsOpen = false;
+  }
 }
+
+
+
