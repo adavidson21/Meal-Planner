@@ -1,38 +1,16 @@
-<!--https://medium.com/allenhwkim/angular-build-a-calendar-in-50-lines-f813f0a04c3b-->
-<style>
-    button {
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        border: 1px solid gray;
-    }
-
-    .content {
-        display: flex;
-        margin: 82px auto 32px;
-        padding: 0 16px;
-        max-width: 960px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #calendar-month {
-        padding: 10px;
-        display: inline;
-        font-size: 20pt;
-    }
-</style>
-
-<div class="content">
-    <div>
-        <button (click)="setMonth(-1)">&lt;</button>
-        <p id="calendar-month">{{date | date:'MMMM'}}</p>
-        <button (click)="setMonth(+1)">&gt;</button>
+<div class="row text-center">
+    <div class="col-md-4">
+        <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
     </div>
-    <ul>
-        <li class="days" *ngFor="let day of days"> {{day}} </li>
-        <li *ngFor="let date of dates" [ngClass]="{grey: !isSameMonth(date)}" (click)="selected.emit(date)">
-            {{date | date:'d'}}
-        </li>
-    </ul>
+</div>
+
+<br>
+
+<div id="calendar" [ngSwitch]="view">
+    <mwl-calendar-month-view *ngSwitchCase="CalendarView.Month" [viewDate]="viewDate">
+    </mwl-calendar-month-view>
+    <mwl-calendar-week-view *ngSwitchCase="CalendarView.Week" >
+    </mwl-calendar-week-view>
+    <mwl-calendar-day-view *ngSwitchCase="CalendarView.Day" >
+    </mwl-calendar-day-view>
 </div>

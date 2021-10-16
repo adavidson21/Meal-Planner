@@ -109,5 +109,8 @@
       }
     }
   },
-  "defaultProject": "Meal-Planner"
+  "defaultProject": "Meal-Planner",
+  "cli": {
+    "analytics": "a7021f56-64f3-431a-ad3e-6dd9c52bfded"
+  }
 }
