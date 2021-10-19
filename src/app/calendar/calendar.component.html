@@ -1,16 +1,20 @@
-<div class="col-md-4">
-    <button class="btn btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate"
-        (viewDateChange)="closeOpenMonthViewDay()">
-        &lt;
-    </button>
-
-    <span>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</span>
-
-    <button class="btn btn-primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate"
-        (viewDateChange)="closeOpenMonthViewDay()">
-        &gt;
-    </button>
-</div>
+<table id="calendar-month">
+    <tr>
+        <td>
+            <button class="btn btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate"
+                (viewDateChange)="closeOpenMonthViewDay()">
+                &lt;
+            </button>
+        </td>
+        <td><span>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</span></td>
+        <td>
+            <button class="btn btn-primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate"
+                (viewDateChange)="closeOpenMonthViewDay()">
+                &gt;
+            </button>
+        </td>
+    </tr>
+</table>
 
 <br>
 

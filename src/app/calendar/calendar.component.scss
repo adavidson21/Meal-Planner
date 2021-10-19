@@ -1,31 +1,40 @@
 h3 {
-    margin: 0 0 10px;
-    font-size: 20pt;
+  margin: 0 0 10px;
+  font-size: 20pt;
 }
 
 pre {
-    padding: 15px;
+  padding: 15px;
 }
 
 #calendar {
-    width: 900px;
+  width: 900px;
 }
 
 button {
-    position: relative;
-    top: -10px;
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    border: 1px solid rgb(161, 160, 160);
-    background-color: transparent;
+  position: relative;
+  top: -10px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  border: 1px solid rgb(161, 160, 160);
+  background-color: transparent;
 }
 
 span {
-    font-size: 25pt;
-    padding: 10px;
+  font-size: 25pt;
+  padding: 10px;
 }
 
 .col-md-4 {
-    text-align: center;
+  text-align: center;
+}
+
+#calendar-month {
+  text-align: center;
+  width: 100%;
+}
+
+#calendar-month td {
+  width: 33.3%;
 }
