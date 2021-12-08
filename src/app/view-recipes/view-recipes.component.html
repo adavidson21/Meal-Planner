@@ -1,1 +1,7 @@
-<p>view-recipes works!</p>
+<div style="text-align:center">
+    <ul *ngFor="let recipe of recipeData?.recipes">
+        <li>
+            <h3>Recipe Name: {{recipe.Name}}</h3>
+        </li>
+    </ul>
+</div>

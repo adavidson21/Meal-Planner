@@ -1,0 +1,42 @@
+{
+    "recipes": [
+        {
+            "Name": "Chicken Salsa Verde",
+            "Type": "Lunch/Dinner",
+            "Method": "Crockpot",
+            "Ingredients": [
+                {
+                    "Name": "Boneless Chicken Breast",
+                    "Amount": "1.5 lbs"
+                },
+                {
+                    "Name": "Mild Salsa",
+                    "Amount": "1 jar"
+                },
+                {
+                    "Name": "Corn",
+                    "Amount": "1 can"
+                },
+                {
+                    "Name": "Black Beans",
+                    "Amount": "1 can"
+                },
+                {
+                    "Name": "Cream Cheese",
+                    "Amount": "8 ounces"
+                }
+            ],
+            "Steps": [
+                {
+                    "Instruction": "Place all ingredients except for the cream cheese into a crockpot."
+                },
+                {
+                    "Instruction": "Set the crockpot to cook on low for 6 hours."
+                },
+                {
+                    "Instruction": "Add in cream cheese and cook for 30 minutes."
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,17 +17,20 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { MatExpansionModule } from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
     AddRecipeComponent,
     ViewRecipesComponent,
     AboutComponent,
-    CalendarComponent
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
@@ -37,9 +41,10 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
       provide: DateAdapter,
       useFactory: adapterFactory,
     }),
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports:[CalendarComponent]
+  exports: [CalendarComponent],
 })
-export class AppModule { }
+export class AppModule {}
