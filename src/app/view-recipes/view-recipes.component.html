@@ -10,7 +10,7 @@
                     {{recipe.Type}}
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <p>List of Ingredients</p>
+            <p *ngFor="let ingredient of recipe.Ingredients">{{ingredient.Amount}} {{ingredient.Name}}</p>
         </mat-expansion-panel>
     </mat-accordion>
 </div>
