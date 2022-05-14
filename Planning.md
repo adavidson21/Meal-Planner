@@ -5,6 +5,7 @@
 ### Must Have
  - Store meals with their associated recipes.
  - Ability to choose multiple meals and create a compiled ingredients list.
+ - Scale ingredients based on inputted number of people (double, half, etc).
 
 ### Nice to Have
  - Select a desired number of meals and randomly choose that amount of meals from all meals available on the site.
