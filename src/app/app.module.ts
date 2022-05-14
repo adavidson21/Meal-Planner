@@ -21,9 +21,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { IngredientsListComponent } from './ingredients-list/ingredients-list.component';
+import { MealPlanningComponent } from './meal-planning/meal-planning.component';
 
 @NgModule({
-  declarations: [AppComponent, AddRecipeComponent, ViewRecipesComponent],
+  declarations: [AppComponent, AddRecipeComponent, ViewRecipesComponent, IngredientsListComponent, MealPlanningComponent],
   imports: [
     BrowserModule,
     FormsModule,
