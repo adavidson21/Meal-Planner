@@ -14,3 +14,7 @@
  - Allow to schedule meals on a calendar to meal plan on a weekly/monthly basis.
  - Create account to store your own recipes
    - Create folders/categories to sort the recipes.
+
+### Mockups
+
+All mockups are available on [Figma](https://www.figma.com/file/zuTiM57Op8CqcAU834jsIr/Meal-Planner?node-id=924%3A5088).
