@@ -1,20 +1,26 @@
 .content[_ngcontent-tso-c103] {
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  flex-direction: column;
-  align-items: center;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mat-expansion-panel {
-  background: none;
+    background: none;
 }
 
 .mat-expansion-panel-header-title,
 .mat-panel-description,
 p {
-  color: black;
+    color: black;
 }
 
 .mat-expansion-panel-header-description {
-  color: lightgrey;
+    color: lightgrey;
+}
+
+#recipe-list__table,
+#recipe-list__table mat-expansion-panel-header,
+#recipe-list__table p {
+    font-family: 'Josefin Sans', sans-serif;
 }

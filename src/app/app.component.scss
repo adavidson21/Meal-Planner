@@ -1,33 +1,40 @@
 mat-toolbar {
-  background: #004a9f;
-  color: white;
+    background: #357560;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 mat-sidenav {
-  margin: 16px;
-  width: 200px;
-  border-right: none;
-  background: #002b5c;
-  color: white;
-  border-radius: 10px;
-  padding: 16px;
-  text-align: center;
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #357560;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
 }
 
 .content {
-  height: calc(100vh - 98px);
-  border-radius: 10px;
-  margin: 16px;
-  margin-left: 32px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2rem;
-  color: lightgray;
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: lightgray;
 }
 
 mat-sidenav-container {
-  height: calc(100vh - 65px);
+    height: calc(100vh - 65px);
 }

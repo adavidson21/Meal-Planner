@@ -4,8 +4,8 @@ import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { ViewRecipesComponent } from './view-recipes/view-recipes.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/calendar', pathMatch: 'full' },
-  { path: 'view', component: ViewRecipesComponent },
+  { path: '', redirectTo: '/meals', pathMatch: 'full' },
+  { path: 'meals', component: ViewRecipesComponent },
   { path: 'add', component: AddRecipeComponent },
 ];
 

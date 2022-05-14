@@ -1,48 +1,31 @@
-<!-- Toolbar 
-<div class="toolbar" role="banner">
-    <div class="spacer__smaller"></div>
-    <a id="title" [routerLink]="['/calendar']" routerLinkActive="router-link-active">Meal Planner</a>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
+<!--Sidenav ref: https://zoaibkhan.com/blog/create-a-responsive-sidebar-menu-with-angular-material/ -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+</style>
 
-    <a [routerLink]="['/view']" routerLinkActive="router-link-active">View Recipes</a>
-    <div class="spacer__smaller"></div>
-    <a [routerLink]="['/add']" routerLinkActive="router-link-active">Add Recipe</a>
-    <div class="spacer__smaller"></div>
-</div>-->
-
-
-<!--Sidenav ref: https://zoaibkhan.com/blog/create-a-responsive-sidebar-menu-with-angular-material/-->
 <mat-toolbar class="mat-elevation-z8">
     <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
         <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
         <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-    </button>
-    Responsive side navigation
+    </button> Meal Planner
 </mat-toolbar>
 
 <mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
-
         <mat-divider></mat-divider>
-        <button mat-button class="menu-button" routerLink="/home">
-            <mat-icon>home</mat-icon>
-            <span>Home</span>
+        <button mat-button class="menu-button" routerLink="/meals">
+            <mat-icon>local_dining</mat-icon>
+            <span>Meals</span>
         </button>
-        <button mat-button class="menu-button" routerLink="/profile">
-            <mat-icon>person</mat-icon>
-            <span>Profile</span>
-        </button>
-        <button mat-button class="menu-button" routerLink="/about">
-            <mat-icon>info</mat-icon>
-            <span>About</span>
-        </button>
-
         <mat-divider></mat-divider>
-
-        <button mat-button class="menu-button" routerLink="/help">
-            <mat-icon>help</mat-icon>
-            <span>Help</span>
+        <button mat-button class="menu-button" routerLink="/list">
+            <mat-icon>local_grocery_store</mat-icon>
+            <span>Shopping List</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button" routerLink="/planning">
+            <mat-icon>list</mat-icon>
+            <span>Meal Planning</span>
         </button>
     </mat-sidenav>
     <mat-sidenav-content>
