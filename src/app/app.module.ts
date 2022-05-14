@@ -8,8 +8,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { ViewRecipesComponent } from './view-recipes/view-recipes.component';
-import { AboutComponent } from './about/about.component';
-import { CalendarComponent } from './calendar/calendar.component';
 
 import { CommonModule } from '@angular/common';
 import { FlatpickrModule } from 'angularx-flatpickr';
@@ -20,13 +18,7 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AddRecipeComponent,
-    ViewRecipesComponent,
-    AboutComponent,
-    CalendarComponent,
-  ],
+  declarations: [AppComponent, AddRecipeComponent, ViewRecipesComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -45,6 +37,5 @@ import { MatExpansionModule } from '@angular/material/expansion';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [CalendarComponent],
 })
 export class AppModule {}
