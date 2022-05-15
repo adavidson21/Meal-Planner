@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ViewRecipesComponent implements OnInit {
   recipeData: any;
+  config: any;
   panelOpenState = false;
 
   constructor(private httpClient: HttpClient) {}
@@ -16,5 +17,8 @@ export class ViewRecipesComponent implements OnInit {
     this.httpClient
       .get<any>('assets/recipes.json')
       .subscribe((data) => (this.recipeData = data));
+    this.httpClient
+      .get<any>('assets/config.json')
+      .subscribe((data) => (this.config = data));
   }
 }

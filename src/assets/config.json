@@ -1,0 +1,21 @@
+{
+    "config": {
+        "Categories": [
+            {
+                "Name": "Breakfast"
+            },
+            {
+                "Name": "Lunch"
+            },
+            {
+                "Name": "Dinner"
+            },
+            {
+                "Name": "Snacks"
+            },
+            {
+                "Name": "Dessert"
+            }
+        ]
+    }
+}

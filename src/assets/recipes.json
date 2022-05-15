@@ -74,6 +74,43 @@
                     "Instruction": "Assemble sandwich with all ingredients"
                 }
             ]
+        },
+        {
+            "Name": "Egg Sandwich",
+            "Type": "Breakfast",
+            "Method": "",
+            "Ingredients": [
+                {
+                    "Name": "Egg",
+                    "Amount": "2"
+                },
+                {
+                    "Name": "Cheese",
+                    "Amount": "1 slice"
+                },
+                {
+                    "Name": "Bagel",
+                    "Amount": "1 bagel"
+                },
+                {
+                    "Name": "Bacon",
+                    "Amount": "2 slices"
+                }
+            ],
+            "Steps": [
+                {
+                    "Instruction": "Cook the eggs in a frying pan until desired cooked amount."
+                },
+                {
+                    "Instruction": "Cook the bacon in a frying pan until desired cooked amount."
+                },
+                {
+                    "Instruction": "Toast the bagel until the desired cooked amount."
+                },
+                {
+                    "Instruction": "Assemble sandwich with all ingredients"
+                }
+            ]
         }
     ]
 }
