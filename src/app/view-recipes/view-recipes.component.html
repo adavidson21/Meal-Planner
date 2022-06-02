@@ -1,9 +1,10 @@
-<div class="toolbar">
-    <div *ngFor="let category of config?.config.Categories">
-        <a>{{category.Name}}</a>
-        <div class="spacer__smaller"></div>
-    </div>
-</div>
+<!-- Temporary removal for feature prioritization
+    <div class="toolbar">
+        <div *ngFor="let category of config?.config.Categories">
+            <a>{{category.Name}}</a>
+            <div class="spacer__smaller"></div>
+        </div>
+    </div>-->
 
 <div id="recipe-list__table">
     <mat-accordion *ngFor="let recipe of recipeData?.recipes">
