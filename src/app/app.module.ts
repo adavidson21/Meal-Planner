@@ -23,9 +23,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { IngredientsListComponent } from './ingredients-list/ingredients-list.component';
 import { MealPlanningComponent } from './meal-planning/meal-planning.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
-  declarations: [AppComponent, AddRecipeComponent, ViewRecipesComponent, IngredientsListComponent, MealPlanningComponent],
+  declarations: [
+    AppComponent,
+    AddRecipeComponent,
+    ViewRecipesComponent,
+    IngredientsListComponent,
+    MealPlanningComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -46,6 +53,7 @@ import { MealPlanningComponent } from './meal-planning/meal-planning.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

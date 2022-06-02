@@ -68,3 +68,7 @@ a {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: goldenrod;
+  }
