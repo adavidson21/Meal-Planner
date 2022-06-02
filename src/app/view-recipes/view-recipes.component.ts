@@ -40,6 +40,5 @@ export class ViewRecipesComponent implements OnInit {
     } else {
       this.shoppingList.push(recipe);
     }
-    console.log(this.shoppingList);
   }
 }
